@@ -261,4 +261,117 @@
 
 **(1) Control Flow Graph (CFG):**
 
+          +-------(1)--------+
 
+          |
+
+          v
+
+          +---(2)-----+
+
+          | i=1 |
+
+          | min = 0 |
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(3)-----+
+
+          | for loop |
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(4)-----+
+
+          | if statement|
+
+          | (condition)|
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(5)-----+
+
+          | update |
+
+          | min index|
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(6)-----+
+
+          | for loop|
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(7)-----+
+
+          | if statement|
+
+          | (condition)|
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(8)-----+
+
+          | update |
+
+          | min index|
+
+          +-----------+
+
+          |
+
+          v
+
+          +---(9)-----+
+
+          | return |
+
+          | convexHull|
+
+          +-----------+
+          
+**(2) Test sets for each coverage criterion:**
+
+**a. Statement Coverage:**
+
+          Test 1: p = {new Point(0, 0), new Point(1, 1)}
+          Test 2: p = {new Point(0, 0), new Point(1, 0), new Point(2, 0)}
+          
+**b. Branch Coverage:**
+
+          Test 1: p = {new Point(0, 0), new Point(1, 1)}
+          Test 2: p = {new Point(0, 0), new Point(1, 0), new Point(2, 0)}
+          Test 3: p = {new Point(0, 0), new Point(1, 0), new Point(1, 1)}
+          
+**c. Basic Condition Coverage:**
+
+          Test 1: p = {new Point(0, 0), new Point(1, 1)}
+          Test 2: p = {new Point(0, 0), new Point(1, 0), new Point(2, 0)}
+          Test 3: p = {new Point(0, 0), new Point(1, 0), new Point(1, 1)}
+          Test 4: p = {new Point(0, 0), new Point(1, 0), new Point(0, 1)}
+          Test 5: p = {new Point(0, 0), new Point(0, 1), new Point(1, 1)}
