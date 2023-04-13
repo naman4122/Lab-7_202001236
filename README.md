@@ -77,3 +77,11 @@
               assertEquals(-1, index);
             }
           }
+
+| **Tester Action and Input Data** | **Expected Outcome** |
+| ---------------------------------|----------------------|
+| Test with v as a non-existent value and an empty array a[] | -1 |
+| Test with v as a non-existent value and a non-empty array a[] | -1 |
+| Test with v as an existent value and an empty array a[] | -1 |
+| Test with v as an existent value and a non-empty array a[] where v exists | the index of v in a[] |
+| Test with v as an existent value and a non-empty array a[] where v does not exist | -1 |
